@@ -1,0 +1,87 @@
+body{
+  margin: 0;
+}
+
+.quote-box {
+  background: linear-gradient(to bottom, #4b1979, #180728);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 40px;
+}
+
+i {
+  color: #ffd630;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 1.25rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#author-text {
+  font-size: 0.9375rem;
+  font-style: italic;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+#author-text::before {
+  content: "";
+  position: absolute;
+  background-color: #ffd630;
+  width: 50px;
+  height: 2px;
+  bottom: -165%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  border: 1px solid #ffd630;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffd630;
+  padding: 10px 20px;
+  font-size: 0.9375rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #ffd630;
+  color: #180728;
+  box-shadow: 2px 2px 30px #ffd630;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  i {
+    font-size: 50px;
+  }
+  p {
+    font-size: 1.5625rem;
+  }
+  #author-text {
+    font-size: 1.25rem;
+    margin-bottom: 100px;
+  }
+  button {
+    font-size: 1.25rem;
+  }
+}
